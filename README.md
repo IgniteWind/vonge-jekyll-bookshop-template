@@ -32,18 +32,39 @@ Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.0, but should su
 
 Install the dependencies for Bookshop:
 
-~~~bash
-$ npm install
-~~~
-
 Install the Jekyll dependencies with [Bundler](http://bundler.io/):
 
-~~~bash
-$ npm run install-jekyll
-~~~
+```bash
+nvm use 14 <-- version important
+npm install
+npm run install-jekyll
 
-Run the website:
+gem i did_you_mean -v=1.5.0
+gem uni did_you_mean -v=1.6.1
 
-~~~bash
-$ npm start
-~~~
+# ruby 3.1.2 is not stable.
+RUBY_CONFIGURE_OPTS=--with-readline-dir="$(brew --prefix readline)" rbenv install 3.1.3 --verbose
+
+(tips) Dont use ruby_install, try rbenv
+
+➜ rbenv global 3.1.3
+ruby 3.1.3
+bundler 2.4.7
+
+# check if jekyll pick the right ruby
+gem install jekyll -v 4.3.2
+# 4.3.1 got issues
+jekyll -v
+
+npm start
+```
+
+## FAQ
+cd site
+bundle update cloudcannon-jekyll-bookshop
+
+## Future
+[jekyll tut](https://jekyllrb.com/)
+
+
+

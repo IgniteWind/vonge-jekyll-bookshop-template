@@ -79,10 +79,12 @@ defaults:
       permalink: /
   - scope:
       type: projects
+      # path: _projects
     values:
       layout: project
   - scope:
       type: posts
+      # path: _posts
     values:
       layout: post
 
