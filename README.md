@@ -36,8 +36,6 @@ Install the Jekyll dependencies with [Bundler](http://bundler.io/):
 
 ```bash
 nvm use 14 <-- version important
-npm install
-npm run install-jekyll
 
 gem i did_you_mean -v=1.5.0
 gem uni did_you_mean -v=1.6.1
@@ -56,6 +54,12 @@ gem install jekyll -v 4.3.2
 # 4.3.1 got issues
 jekyll -v
 
+npm install
+# optional
+npm i --dev 
+# i update liquid (4.0.4) etc in the Gemfile
+npm run install-jekyll
+
 npm start
 ```
 
@@ -65,6 +69,8 @@ bundle update cloudcannon-jekyll-bookshop
 
 ## Future
 [jekyll tut](https://jekyllrb.com/)
+[bookshop](https://github.com/CloudCannon/bookshop/blob/main/guides/jekyll.adoc#starting-point)
+[gh](https://github.com/github/pages-gem)
 
 
 
